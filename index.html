@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ability — Empowering People, Building Inclusion</title>
+    <meta name="description" content="Accessibility is not a privilege. It is a right. Empowering People with Disabilities (PWD) through digital and physical inclusion.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a href="#main-content" class="skip-link" data-i18n="skipLink">Skip to main content</a>
+
+    <!-- Accessibility Bar -->
+    <div class="accessibility-bar" aria-label="Accessibility Controls">
+        <div class="container bar-container">
+            <span class="bar-title" data-i18n="a11yBarTitle">Accessibility Settings:</span>
+            <div class="a11y-buttons">
+                <button id="btn-increase-font" class="a11y-btn" aria-label="Increase Font Size">A+</button>
+                <button id="btn-decrease-font" class="a11y-btn" aria-label="Decrease Font Size">A-</button>
+                <button id="btn-high-contrast" class="a11y-btn" aria-label="Toggle High Contrast">
+                    <span data-i18n="highContrast">High Contrast</span>
+                </button>
+                <button id="btn-reset-a11y" class="a11y-btn" aria-label="Reset Accessibility Settings">
+                    <span data-i18n="resetA11y">Reset</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navbar -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo" aria-label="Ability Home">
+                <span class="logo-symbol">♿</span>
+                <span class="logo-text">Ability</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link" data-i18n="navHome">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="#types" class="nav-link" data-i18n="navTypes">Disability Types</a></li>
+                    <li><a href="#accessibility" class="nav-link" data-i18n="navAccessibility">Accessibility</a></li>
+                    <li><a href="#rights" class="nav-link" data-i18n="navRights">Rights & Opportunities</a></li>
+                    <li><a href="#tips" class="nav-link" data-i18n="navTips">Inclusion Tips</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-controls">
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">
+                    <span id="lang-flag">🇪🇬</span>
+                    <span id="lang-text">العربية</span>
+                </button>
+
+                <!-- Hamburger Menu Button -->
+                <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="tagline" data-i18n="tagline">Accessibility is not a privilege. It is a right.</span>
+                    <h1 data-i18n="heroTitle">Empowering People, Building Inclusion</h1>
+                    <p data-i18n="heroDesc">Every individual deserves equal opportunities, independence, respect, and accessible environments. Together, we remove barriers and advocate for a society where everyone thrives based on their unique abilities.</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary" data-i18n="btnLearnMore">Learn More</a>
+                        <a href="#rights" class="btn btn-secondary" data-i18n="btnOurMission">Our Mission</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-card-graphic">
+                        <div class="icon-circle">🌐</div>
+                        <h3 data-i18n="graphicCardTitle">Equal Access for All</h3>
+                        <p data-i18n="graphicCardDesc">Digital and physical inclusion builds a stronger, fairer world for everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="aboutTitle">About Us</h2>
+                    <p data-i18n="aboutSubtitle">Understanding inclusion, equality, and human dignity.</p>
+                </div>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3 data-i18n="whatIsDisabilityTitle">Understanding Disability</h3>
+                        <p data-i18n="whatIsDisabilityDesc">Disability is a natural part of human diversity. It arises when societal, environmental, or digital barriers prevent individuals with physical, sensory, or cognitive impairments from fully participating in daily life.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="whyAccessibilityTitle">Why Accessibility Matters</h3>
+                        <p data-i18n="whyAccessibilityDesc">Accessibility ensures that environments, products, services, and digital platforms are usable by everyone. When we design inclusively, we foster independence, innovation, and social unity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of Disabilities -->
+        <section id="types" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="typesTitle">Types of Disabilities</h2>
+                    <p data-i18n="typesSubtitle">Diversity in abilities requires versatile and accessible solutions.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="card card-hover">
+                        <div class="card-icon">🦽</div>
+                        <h3 data-i18n="typePhysicalTitle">Physical Disabilities</h3>
+                        <p data-i18n="typePhysicalDesc">Affects mobility, dexterity, or stamina. Solutions include wheelchair ramps, wide doorways, automatic doors, and adaptive devices.</p>
+                    </div>
+                    <div class="card card-hover">
+                        <div class="card-icon">🦯</div>
+                        <h3 data-i18n="typeVisualTitle">Visual Impairments</h3>
+                        <p data-i18n="typeVisualDesc">Ranges from partial vision loss to complete blindness. Supported by screen readers, high contrast displays, braille, and tactile paving.</p>
+                    </div>
+                    <div class="card card-hover">
+                        <div class="card-icon">🧏</div>
+                        <h3 data-i18n="typeHearingTitle">Hearing Impairments</h3>
+                        <p data-i18n="typeHearingDesc">Includes hard-of-hearing and deaf individuals. Empowered through sign language interpretation, closed captions, and visual alerts.</p>
+                    </div>
+                    <div class="card card-hover">
+                        <div class="card-icon">💬</div>
+                        <h3 data-i18n="typeSpeechTitle">Speech & Communication</h3>
+                        <p data-i18n="typeSpeechDesc">Impacts speech production or language processing. Supported by Augmentative and Alternative Communication (AAC) tools and text devices.</p>
+                    </div>
+                    <div class="card card-hover">
+                        <div class="card-icon">🧠</div>
+                        <h3 data-i18n="typeIntellectualTitle">Intellectual Disabilities</h3>
+                        <p data-i18n="typeIntellectualDesc">Affects cognitive functioning and adaptive behavior. Enhanced by clear language, visual cues, and structured learning.</p>
+                    </div>
+                    <div class="card card-hover">
+                        <div class="card-icon">📚</div>
+                        <h3 data-i18n="typeLearningTitle">Learning Disabilities</h3>
+                        <p data-i18n="typeLearningDesc">Includes dyslexia, dyscalculia, and ADHD. Addressed through adaptable text formats, audiobooks, and specialized educational software.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessibility Section -->
+        <section id="accessibility" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="a11ySectionTitle">Digital & Physical Accessibility</h2>
+                    <p data-i18n="a11ySectionSubtitle">Creating seamless experiences in both virtual and real-world spaces.</p>
+                </div>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-badge" data-i18n="badgeDigital">Digital Sphere</div>
+                        <h3 data-i18n="digitalA11yTitle">Accessible Websites & Software</h3>
+                        <ul class="custom-list">
+                            <li data-i18n="dig1">Screen reader compatibility with semantic HTML and ARIA labels.</li>
+                            <li data-i18n="dig2">Full keyboard-only navigation without mouse dependency.</li>
+                            <li data-i18n="dig3">Captions, subtitles, and transcripts for video and audio content.</li>
+                            <li data-i18n="dig4">High color contrast ratio and resizable text without layout breakage.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-badge" data-i18n="badgePhysical">Physical Sphere</div>
+                        <h3 data-i18n="physicalA11yTitle">Accessible Urban & Built Environments</h3>
+                        <ul class="custom-list">
+                            <li data-i18n="phy1">Ramps, wide elevators, and tactile warning paving in public spaces.</li>
+                            <li data-i18n="phy2">Accessible public transport featuring low-floor buses and audio announcements.</li>
+                            <li data-i18n="phy3">Inclusive education classrooms equipped with assistive technologies.</li>
+                            <li data-i18n="phy4">Accessible workplaces with ergonomic, customizable workstations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rights and Opportunities -->
+        <section id="rights" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="rightsTitle">Rights & Equal Opportunities</h2>
+                    <p data-i18n="rightsSubtitle">Inclusion is legally and morally bound to human rights standards.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3 data-i18n="rightEduTitle">🎓 Inclusive Education</h3>
+                        <p data-i18n="rightEduDesc">Equal access to schools, universities, and lifelong learning materials without discrimination.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="rightEmpTitle">💼 Fair Employment</h3>
+                        <p data-i18n="rightEmpDesc">Equal career opportunities, fair recruitment processes, and reasonable workplace accommodations.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="rightHealthTitle">🏥 Accessible Healthcare</h3>
+                        <p data-i18n="rightHealthDesc">Barrier-free medical facilities, clear medical communication, and specialized health services.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="rightTransTitle">🚍 Public Transportation</h3>
+                        <p data-i18n="rightTransDesc">Fully accessible transit networks ensuring freedom of movement and personal independence.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="rightTechTitle">💻 Assistive Technology</h3>
+                        <p data-i18n="rightTechDesc">Affordable access to digital tools, software, and hardware designed for accessibility.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="rightSocialTitle">🎨 Social & Cultural Life</h3>
+                        <p data-i18n="rightSocialDesc">Equal participation in arts, sports, recreation, and community governance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inclusion Tips -->
+        <section id="tips" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="tipsTitle">Tips for Everyday Inclusion</h2>
+                    <p data-i18n="tipsSubtitle">Simple practices to foster respectful and dignified communication.</p>
+                </div>
+                <div class="grid-2">
+                    <div class="tip-card">
+                        <span class="tip-number">01</span>
+                        <div>
+                            <h3 data-i18n="tip1Title">Ask Before Helping</h3>
+                            <p data-i18n="tip1Desc">Never assume someone needs assistance. Ask politely if help is needed, and wait for instructions before acting.</p>
+                        </div>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-number">02</span>
+                        <div>
+                            <h3 data-i18n="tip2Title">Speak Directly to the Individual</h3>
+                            <p data-i18n="tip2Desc">Address the person directly rather than speaking through an interpreter, companion, or assistant.</p>
+                        </div>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-number">03</span>
+                        <div>
+                            <h3 data-i18n="tip3Title">Respect Personal Space & Mobility Tools</h3>
+                            <p data-i18n="tip3Desc">Treat mobility devices, guide dogs, and assistive equipment as extensions of personal personal space.</p>
+                        </div>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-number">04</span>
+                        <div>
+                            <h3 data-i18n="tip4Title">Focus on Ability & Identity</h3>
+                            <p data-i18n="tip4Desc">Recognize people for their achievements, skills, and character rather than defining them solely by an impairment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspirational Banner -->
+        <section class="inspirational-section">
+            <div class="container">
+                <blockquote class="inspiration-quote">
+                    <p data-i18n="inspireQuote">"Disability does not define a person's value, dreams, or potential. Inclusion is the path to unlocking human achievement."</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="contactTitle">Get in Touch</h2>
+                    <p data-i18n="contactSubtitle">Have questions or ideas to improve accessibility? Send us a message.</p>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div id="form-alert" class="form-alert hidden" role="alert"></div>
+                        
+                        <div class="form-group">
+                            <label for="name" data-i18n="labelName">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <span class="error-msg" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-i18n="labelEmail">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <span class="error-msg" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-i18n="labelMessage">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                            <span class="error-msg" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="btnSend">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="logo footer-logo">
+                    <span class="logo-symbol">♿</span>
+                    <span>Ability</span>
+                </div>
+                <p data-i18n="footerDesc">Empowering People, Building Inclusion. Advocating for accessible digital and physical spaces worldwide.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerLinksTitle">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero" data-i18n="navHome">Home</a></li>
+                    <li><a href="#about" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="#types" data-i18n="navTypes">Disability Types</a></li>
+                    <li><a href="#accessibility" data-i18n="navAccessibility">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerRightsTitle">Rights</h4>
+                <ul class="footer-links">
+                    <li><a href="#rights" data-i18n="navRights">Equal Opportunities</a></li>
+                    <li><a href="#tips" data-i18n="navTips">Inclusion Tips</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Ability. <span data-i18n="copyright">All rights reserved. Building an accessible world for everyone.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+/* ==========================================================================
+   Translations Object (English & Arabic)
+   ========================================================================== */
+const translations = {
+    en: {
+        skipLink: "Skip to main content",
+        a11yBarTitle: "Accessibility Settings:",
+        highContrast: "High Contrast",
+        resetA11y: "Reset",
+        navHome: "Home",
+        navAbout: "About Us",
+        navTypes: "Disability Types",
+        navAccessibility: "Accessibility",
+        navRights: "Rights & Opportunities",
+        navTips: "Inclusion Tips",
+        navContact: "Contact",
+        tagline: "Accessibility is not a privilege. It is a right.",
+        heroTitle: "Empowering People, Building Inclusion",
+        heroDesc: "Every individual deserves equal opportunities, independence, respect, and accessible environments. Together, we remove barriers and advocate for a society where everyone thrives based on their unique abilities.",
+        btnLearnMore: "Learn More",
+        btnOurMission: "Our Mission",
+        graphicCardTitle: "Equal Access for All",
+        graphicCardDesc: "Digital and physical inclusion builds a stronger, fairer world for everyone.",
+        aboutTitle: "About Us",
+        aboutSubtitle: "Understanding inclusion, equality, and human dignity.",
+        whatIsDisabilityTitle: "Understanding Disability",
+        whatIsDisabilityDesc: "Disability is a natural part of human diversity. It arises when societal, environmental, or digital barriers prevent individuals with physical, sensory, or cognitive impairments from fully participating in daily life.",
+        whyAccessibilityTitle: "Why Accessibility Matters",
+        whyAccessibilityDesc: "Accessibility ensures that environments, products, services, and digital platforms are usable by everyone. When we design inclusively, we foster independence, innovation, and social unity.",
+        typesTitle: "Types of Disabilities",
+        typesSubtitle: "Diversity in abilities requires versatile and accessible solutions.",
+        typePhysicalTitle: "Physical Disabilities",
+        typePhysicalDesc: "Affects mobility, dexterity, or stamina. Solutions include wheelchair ramps, wide doorways, automatic doors, and adaptive devices.",
+        typeVisualTitle: "Visual Impairments",
+        typeVisualDesc: "Ranges from partial vision loss to complete blindness. Supported by screen readers, high contrast displays, braille, and tactile paving.",
+        typeHearingTitle: "Hearing Impairments",
+        typeHearingDesc: "Includes hard-of-hearing and deaf individuals. Empowered through sign language interpretation, closed captions, and visual alerts.",
+        typeSpeechTitle: "Speech & Communication",
+        typeSpeechDesc: "Impacts speech production or language processing. Supported by Augmentative and Alternative Communication (AAC) tools and text devices.",
+        typeIntellectualTitle: "Intellectual Disabilities",
+        typeIntellectualDesc: "Affects cognitive functioning and adaptive behavior. Enhanced by clear language, visual cues, and structured learning.",
+        typeLearningTitle: "Learning Disabilities",
+        typeLearningDesc: "Includes dyslexia, dyscalculia, and ADHD. Addressed through adaptable text formats, audiobooks, and specialized educational software.",
+        a11ySectionTitle: "Digital & Physical Accessibility",
+        a11ySectionSubtitle: "Creating seamless experiences in both virtual and real-world spaces.",
+        badgeDigital: "Digital Sphere",
+        badgePhysical: "Physical Sphere",
+        digitalA11yTitle: "Accessible Websites & Software",
+        dig1: "Screen reader compatibility with semantic HTML and ARIA labels.",
+        dig2: "Full keyboard-only navigation without mouse dependency.",
+        dig3: "Captions, subtitles, and transcripts for video and audio content.",
+        dig4: "High color contrast ratio and resizable text without layout breakage.",
+        physicalA11yTitle: "Accessible Urban & Built Environments",
+        phy1: "Ramps, wide elevators, and tactile warning paving in public spaces.",
+        phy2: "Accessible public transport featuring low-floor buses and audio announcements.",
+        phy3: "Inclusive education classrooms equipped with assistive technologies.",
+        phy4: "Accessible workplaces with ergonomic, customizable workstations.",
+        rightsTitle: "Rights & Equal Opportunities",
+        rightsSubtitle: "Inclusion is legally and morally bound to human rights standards.",
+        rightEduTitle: "🎓 Inclusive Education",
+        rightEduDesc: "Equal access to schools, universities, and lifelong learning materials without discrimination.",
+        rightEmpTitle: "💼 Fair Employment",
+        rightEmpDesc: "Equal career opportunities, fair recruitment processes, and reasonable workplace accommodations.",
+        rightHealthTitle: "🏥 Accessible Healthcare",
+        rightHealthDesc: "Barrier-free medical facilities, clear medical communication, and specialized health services.",
+        rightTransTitle: "🚍 Public Transportation",
+        rightTransDesc: "Fully accessible transit networks ensuring freedom of movement and personal independence.",
+        rightTechTitle: "💻 Assistive Technology",
+        rightTechDesc: "Affordable access to digital tools, software, and hardware designed for accessibility.",
+        rightSocialTitle: "🎨 Social & Cultural Life",
+        rightSocialDesc: "Equal participation in arts, sports, recreation, and community governance.",
+        tipsTitle: "Tips for Everyday Inclusion",
+        tipsSubtitle: "Simple practices to foster respectful and dignified communication.",
+        tip1Title: "Ask Before Helping",
+        tip1Desc: "Never assume someone needs assistance. Ask politely if help is needed, and wait for instructions before acting.",
+        tip2Title: "Speak Directly to the Individual",
+        tip2Desc: "Address the person directly rather than speaking through an interpreter, companion, or assistant.",
+        tip3Title: "Respect Personal Space & Mobility Tools",
+        tip3Desc: "Treat mobility devices, guide dogs, and assistive equipment as extensions of personal space.",
+        tip4Title: "Focus on Ability & Identity",
+        tip4Desc: "Recognize people for their achievements, skills, and character rather than defining them solely by an impairment.",
+        inspireQuote: "\"Disability does not define a person's value, dreams, or potential. Inclusion is the path to unlocking human achievement.\"",
+        contactTitle: "Get in Touch",
+        contactSubtitle: "Have questions or ideas to improve accessibility? Send us a message.",
+        labelName: "Full Name",
+        labelEmail: "Email Address",
+        labelMessage: "Message",
+        btnSend: "Send Message",
+        footerDesc: "Empowering People, Building Inclusion. Advocating for accessible digital and physical spaces worldwide.",
+        footerLinksTitle: "Quick Links",
+        footerRightsTitle: "Rights",
+        copyright: "All rights reserved. Building an accessible world for everyone.",
+        msgSuccess: "Thank you! Your message has been sent successfully.",
+        errName: "Please enter your name.",
+        errEmail: "Please enter a valid email address.",
+        errMessage: "Please enter your message."
+    },
+    ar: {
+        skipLink: "الانتقال إلى المحتوى الرئيسي",
+        a11yBarTitle: "إعدادات إمكانية الوصول:",
+        highContrast: "تباين عالٍ",
+        resetA11y: "إعادة ضبط",
+        navHome: "الرئيسية",
+        navAbout: "من نحن",
+        navTypes: "أنواع الإعاقات",
+        navAccessibility: "إمكانية الوصول",
+        navRights: "الحقوق والفرص",
+        navTips: "نصائح للدمج",
+        navContact: "تواصل معنا",
+        tagline: "إمكانية الوصول ليست امتيازاً، بل هي حق.",
+        heroTitle: "تمكين الأفراد، وبناء مجتمع دامج",
+        heroDesc: "يستحق كل فرد فرصاً متكافئة، واستقلالية، واحتراماً، وبيئات ميسرة. نقتلع العوائق معاً لنبني مجتمعاً يزدهر فيه الجميع بناءً على قدراتهم الفريدة.",
+        btnLearnMore: "اعرف أكثر",
+        btnOurMission: "مهمتنا",
+        graphicCardTitle: "وصول متكافئ للجميع",
+        graphicCardDesc: "الدمج الرقمي والبيئي يبني عالماً أكثر عدلاً وقوة للجميع.",
+        aboutTitle: "من نحن",
+        aboutSubtitle: "فهم الشمولية، والمسواة، والكرامة الإنسانية.",
+        whatIsDisabilityTitle: "مفهوم الإعاقة",
+        whatIsDisabilityDesc: "الإعاقة هي جزء طبيعي من التنوع البشري. تنشأ عندما تحول العوائق المجتمعية أو البيئية أو الرقمية دون مشاركة الأشخاص ذوي الإعاقة بشكل كامل في الحياة اليومية.",
+        whyAccessibilityTitle: "أهمية إمكانية الوصول",
+        whyAccessibilityDesc: "تضمن إمكانية الوصول أن تكون البيئات والمنتجات والخدمات والمنصات الرقمية قابلة للاستخدام من قبل الجميع. التصميم الشامل يعزز الاستقلالية والابتكار.",
+        typesTitle: "أنواع الإعاقات",
+        typesSubtitle: "التنوع في القدرات يتطلب حلولاً ميسرة ومتنوعة.",
+        typePhysicalTitle: "الإعاقات الحركية",
+        typePhysicalDesc: "تؤثر على الحركة أو القدرة على التنقل. تشمل الحلول المنحدرات، والأبواب العريضة والآلية، والأجهزة التكيفية.",
+        typeVisualTitle: "الإعاقات البصرية",
+        typeVisualDesc: "تتراوح من ضعف النظر إلى الكف التام. تدعمها قارئات الشاشة، والتباين العالي، ولغة برايل، والمسارات الملموسة.",
+        typeHearingTitle: "الإعاقات السمعية",
+        typeHearingDesc: "تشمل ضعف السمع والصمم. يتم تمكينهم من خلال ترجمة لغة الإشارة، والترجمة النصية، والتنبيهات البصرية.",
+        typeSpeechTitle: "إعاقات النطق والتواصل",
+        typeSpeechDesc: "تؤثر على إنتاج الكلام أو معالجة اللغة. تدعمها أدوات التواصل البديل والمعزز والأجهزة النصية.",
+        typeIntellectualTitle: "الإعاقات الذهنية",
+        typeIntellectualDesc: "تؤثر على الوظائف المعرفية والسلوك التكيفي. يتم دعمها باللغة المبسطة والإرشادات البصرية.",
+        typeLearningTitle: "صعوبات التعلم",
+        typeLearningDesc: "تشمل عسر القراءة وتشتت الانتباه. يتم التعامل معها عبر النصوص القابلة للتعديل والكتب الصوتية.",
+        a11ySectionTitle: "إمكانية الوصول الرقمية والمكانية",
+        a11ySectionSubtitle: "خلق تجارب سلسة في العالم الافتراضي والواقعي.",
+        badgeDigital: "المجال الرقمي",
+        badgePhysical: "المجال المكاني",
+        digitalA11yTitle: "المواقع والبرامج الميسرة",
+        dig1: "التوافق مع قارئات الشاشة باستخدام HTML البرمجي وتسميات ARIA.",
+        dig2: "تصفح كامل بواسطة لوحة المفاتيح دون الحاجة للفأرة.",
+        dig3: "توفر الترجمة النصية والنصوص المكتوبة للمحتوى الصوتي والمرئي.",
+        dig4: "تباين ألوان عالٍ وإمكانية تغيير حجم النص دون تشويه التصميم.",
+        physicalA11yTitle: "البيئات Urban والعمرانية الميسرة",
+        phy1: "منحدرات، ومصاعد عريضة، وبلاط تحذيري ملموس في المساحات العامة.",
+        phy2: "وسائل نقل عامة ميسرة تتميز بالحافلات ذات الأرضية المنخفضة والإعلانات الصوتية.",
+        phy3: "فصول تعليمية شاملة مجهزة بتقنيات مساعدة.",
+        phy4: "بيئات عمل ميسرة تحتوي على محطات عمل مريحة وقابلة للتعديل.",
+        rightsTitle: "الحقوق والفرص المتكافئة",
+        rightsSubtitle: "الدمج مرتبط قانونياً وأخلاقياً بمعايير حقوق الإنسان.",
+        rightEduTitle: "🎓 التعليم الشامل",
+        rightEduDesc: "فرص متكافئة للدراسة في المدارس والجامعات والوصول لمواد التعلم دون تمييز.",
+        rightEmpTitle: "💼 التوظيف العادل",
+        rightEmpDesc: "فرص عمل متساوية، وإجراءات توظيف عادلة، وتسهيلات معقولة في بيئة العمل.",
+        rightHealthTitle: "🏥 الرعاية الصحية الميسرة",
+        rightHealthDesc: "مرافق طبية خالية من العوائق، وتواصل طبي واضح، وخدمات صحية متخصصة.",
+        rightTransTitle: "🚍 وسائل النقل العامة",
+        rightTransDesc: "شبكات نقل ميسرة بالكامل تضمن حرية التنقل والاستقلالية الشخصية.",
+        rightTechTitle: "💻 التكنولوجيا المساعدة",
+        rightTechDesc: "وصول بأسعار مناسبة للأدوات الرقمية والبرامج والأجهزة المصممة لإمكانية الوصول.",
+        rightSocialTitle: "🎨 الحياة الاجتماعية والثقافية",
+        rightSocialDesc: "مشاركة متكافئة في الفنون، والرياضة، والأنشطة الترفيهية، وإدارة المجتمع.",
+        tipsTitle: "نصائح للدمج اليومي",
+        tipsSubtitle: "ممارسات بسيطة لتعزيز التواصل المحترم واللائق.",
+        tip1Title: "اسأل قبل تقديم المساعدة",
+        tip1Desc: "لا تفترض أبداً أن الشخص بحاجة للمساعدة. اسأل بلطف وانتظر التوجيهات قبل البدء.",
+        tip2Title: "تحدث مباشرة مع الشخص",
+        tip2Desc: "وجه حديثك إلى الشخص مباشرة بدلاً من التحدث عبر المترجم أو المرافق.",
+        tip3Title: "احترم المساحة الشخصية وأدوات التنقل",
+        tip3Desc: "تعامل مع أجهزة التنقل وكلاب التوجيه والأدوات المساعدة كجزء من المساحة الشخصية للشخص.",
+        tip4Title: "ركز على القدرات الهادفة",
+        tip4Desc: "قدّر الأشخاص بناءً على إنجازاتهم ومهاراتهم وشخصيتهم بدلاً من تحديدهم بناءً على الإعاقة فقط.",
+        inspireQuote: "\"الإعاقة لا تحدد قيمة الشخص، أو أحلامه، أو إمكانياته. الدمج هو الطريق لإطلاق الطاقات البشرية.\"",
+        contactTitle: "تواصل معنا",
+        contactSubtitle: "لديك أسئلة أو أفكار لتحسين إمكانية الوصول؟ أرسل لنا رسالة.",
+        labelName: "الاسم الكامل",
+        labelEmail: "البريد الإلكتروني",
+        labelMessage: "الرسالة",
+        btnSend: "إرسال الرسالة",
+        footerDesc: "تمكين الأفراد، وبناء مجتمع دامج. ندعم المساحات الرقمية والمكانية الميسرة للجميع.",
+        footerLinksTitle: "روابط سريعة",
+        footerRightsTitle: "الحقوق",
+        copyright: "جميع الحقوق محفوظة. بناء عالم ميسر للجميع.",
+        msgSuccess: "شكراً لك! تم إرسال رسالتك بنجاح.",
+        errName: "يرجى إدخال الاسم.",
+        errEmail: "يرجى إدخال بريد إلكتروني صحيح.",
+        errMessage: "يرجى إدخال الرسالة."
+    }
+};
+
+/* ==========================================================================
+   State Management & DOM Dynamic Initialization
+   ========================================================================== */
+let currentLang = localStorage.getItem('ability_lang') || 'en';
+let currentFontSize = parseInt(localStorage.getItem('ability_font_size')) || 16;
+let isHighContrast = localStorage.getItem('ability_high_contrast') === 'true';
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize accessibility state
+    applyFontSize(currentFontSize);
+    applyHighContrast(isHighContrast);
+    setLanguage(currentLang);
+
+    // Event Listeners for Accessibility Controls
+    document.getElementById('btn-increase-font').addEventListener('click', () => adjustFontSize(2));
+    document.getElementById('btn-decrease-font').addEventListener('click', () => adjustFontSize(-2));
+    document.getElementById('btn-high-contrast').addEventListener('click', toggleHighContrast);
+    document.getElementById('btn-reset-a11y').addEventListener('click', resetAccessibility);
+
+    // Language Switcher
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+        const newLang = currentLang === 'en' ? 'ar' : 'en';
+        setLanguage(newLang);
+    });
+
+    // Mobile Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !isExpanded);
+        navMenu.classList.toggle('active');
+    });
+
+    // Close Mobile Menu on Nav Link Click
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Contact Form Validation & Submission
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', handleFormSubmit);
+});
+
+/* ==========================================================================
+   Language Switcher Functionality
+   ========================================================================== */
+function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('ability_lang', lang);
+
+    // Update HTML attributes for RTL/LTR
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    // Update Language Toggle Button UI
+    const langFlag = document.getElementById('lang-flag');
+    const langText = document.getElementById('lang-text');
+
+    if (lang === 'ar') {
+        langFlag.textContent = '🇬🇧';
+        langText.textContent = 'English';
+    } else {
+        langFlag.textContent = '🇪🇬';
+        langText.textContent = 'العربية';
+    }
+
+    // Update all translatable elements
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
+    });
+}
+
+/* ==========================================================================
+   Accessibility Controls Logic
+   ========================================================================== */
+function adjustFontSize(delta) {
+    currentFontSize = Math.min(Math.max(currentFontSize + delta, 12), 24);
+    applyFontSize(currentFontSize);
+}
+
+function applyFontSize(size) {
+    document.documentElement.style.fontSize = `${size}px`;
+    localStorage.setItem('ability_font_size', size);
+}
+
+function toggleHighContrast() {
+    isHighContrast = !isHighContrast;
+    applyHighContrast(isHighContrast);
+}
+
+function applyHighContrast(enable) {
+    if (enable) {
+        document.body.classList.add('high-contrast');
+    } else {
+        document.body.classList.remove('high-contrast');
+    }
+    localStorage.setItem('ability_high_contrast', enable);
+}
+
+function resetAccessibility() {
+    currentFontSize = 16;
+    isHighContrast = false;
+    applyFontSize(16);
+    applyHighContrast(false);
+}
+
+/* ==========================================================================
+   Form Validation Logic
+   ========================================================================== */
+function handleFormSubmit(e) {
+    e.preventDefault();
+
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
+    const nameError = document.getElementById('name-error');
+    const emailError = document.getElementById('email-error');
+    const messageError = document.getElementById('message-error');
+    const formAlert = document.getElementById('form-alert');
+
+    // Reset messages
+    nameError.textContent = '';
+    emailError.textContent = '';
+    messageError.textContent = '';
+    formAlert.classList.add('hidden');
+    formAlert.textContent = '';
+
+    let isValid = true;
+
+    // Validate Name
+    if (!nameInput.value.trim()) {
+        nameError.textContent = translations[currentLang].errName;
+        isValid = false;
+    }
+
+    // Validate Email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
+        emailError.textContent = translations[currentLang].errEmail;
+        isValid = false;
+    }
+
+    // Validate Message
+    if (!messageInput.value.trim()) {
+        messageError.textContent = translations[currentLang].errMessage;
+        isValid = false;
+    }
+
+    if (isValid) {
+        formAlert.classList.remove('hidden');
+        formAlert.className = 'form-alert success';
+        formAlert.textContent = translations[currentLang].msgSuccess;
+
+        // Clear Form Fields
+        nameInput.value = '';
+        emailInput.value = '';
+        messageInput.value = '';
+    }
+}
+
+    </script>
+</body>
+</html>
